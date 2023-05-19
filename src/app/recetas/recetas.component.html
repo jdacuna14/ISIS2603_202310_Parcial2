@@ -1,0 +1,15 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <p>** La calificación promedio es de {{average}} con un registro de {{total}} opiniones **</p>
+    <div class="col mb-2" *ngFor="let r of recetas">
+      <div class="card p-2">
+        <h5 class="card-title">{{r.nombre}}</h5>
+        <img src="{{r.imagen}}">
+        <p>Calificación {{r.estrellas}} de {{r.cantidadOpiniones}} opiniones.</p>
+        <p>Duración: {{r.duracion}} | Dificultad: {{r.dificultad}}</p>
+        <p>Por: {{r.autorReceta}}</p>
+      </div>
+    </div>
+  </div>
+</div>
